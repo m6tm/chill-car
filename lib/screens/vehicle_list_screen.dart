@@ -43,7 +43,7 @@ class _VehicleListScreenState extends State<VehicleListScreen> {
   }
 
   void _filterAndSortVehicles() {
-    List<Vehicle> filtered = _vehicles;
+    List<Vehicle> filtered = List.from(_vehicles); // Create a mutable copy
 
     // Filter by category
     if (_selectedCategory != null) {

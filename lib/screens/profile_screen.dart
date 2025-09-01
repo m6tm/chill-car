@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:chilldrive/models/user.dart';
 import 'package:chilldrive/models/booking.dart';
-import 'package:chilldrive/models/vehicle.dart';
 import 'package:chilldrive/services/data_service.dart';
 import 'package:chilldrive/screens/vehicle_detail_screen.dart';
 
@@ -162,7 +161,7 @@ class ProfileScreen extends StatelessWidget {
                       ),
                     )
                   else
-                    ...bookings.map((booking) => BookingCard(booking: booking)).toList(),
+                    ...bookings.map((booking) => BookingCard(booking: booking)),
                   const SizedBox(height: 24),
                   Card(
                     child: Column(
